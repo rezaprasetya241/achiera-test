@@ -56,7 +56,9 @@ const RegistrationForm = () => {
             className="flex flex-col gap-3 mt-5"
           >
             <div>
-              <label htmlFor="name">Nama</label>
+              <label htmlFor="name">
+                Nama<span className="text-red-500">*</span>
+              </label>
               <input
                 id="name"
                 type="text"
@@ -66,7 +68,9 @@ const RegistrationForm = () => {
               <ErrorMessage message={errors.name?.message || ""} />
             </div>
             <div>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">
+                Email<span className="text-red-500">*</span>
+              </label>
               <input
                 id="email"
                 type="email"
@@ -77,7 +81,9 @@ const RegistrationForm = () => {
             </div>
 
             <div>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">
+                Password<span className="text-red-500">*</span>
+              </label>
               <input
                 id="password"
                 type="password"
